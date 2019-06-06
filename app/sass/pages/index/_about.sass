@@ -1,0 +1,72 @@
+.about-section
+	margin-top: 130px
+	.about-section__content
+		height: 220px
+		padding-top: 90px
+		+max-screen(767px)
+			height: auto
+		+max-screen(531px)
+			padding-top: 10px
+		h2
+			font-weight: 900
+			font-size: 48px
+			letter-spacing: 6px
+			+max-screen(360px)
+				font-size: 43px
+		h5
+			font-size: 15px
+			margin-top: 38px
+			line-height: 27px
+			+max-screen(767px)
+				max-width: 330px
+		h3
+			font-size: 14px
+			font-weight: 900 
+			margin-top: 31px
+			transition: .6s
+			cursor: pointer
+			+max-screen(1200px)
+				font-size: 13px
+			span
+				padding-bottom: 2px
+				border-bottom: 2px solid #B2956C
+			&:hover
+				color: #BEA57C		
+		.about-section__strips-container
+			position: absolute
+			left: -130px
+			+max-screen(767px)
+				display: none
+			.large_strip
+				width: 150px
+				background-color: #000
+				border: 1px solid #000
+				float: right
+			.little_strip
+				width: 43px
+				background-color: #C8A77B
+				border: 1px solid #C8A77B
+				height: 2px
+				float: right
+		.about_content_text
+			margin-left: 10%
+			+max-screen(650px)
+				margin-left: 0
+			+max-screen(350px)
+				text-align: center
+	.about-section__image
+		height: 400px
+		padding-left: 0
+		overflow: hidden
+		img
+			+max-screen(991px)
+				margin-left: -280px
+			+max-screen(767px)
+				margin-left: 0
+				width: 600px
+			+max-screen(576px)
+				margin-left: -14px
+			+max-screen(486px)
+				margin-left: -54px
+			+max-screen(400px)
+				margin-left: -130px

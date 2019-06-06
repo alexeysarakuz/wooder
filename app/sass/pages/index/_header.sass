@@ -1,0 +1,194 @@
+*
+	+max-screen(1010px)
+		box-sizing: border-box
+.menu-icon_toggle.icon-close
+	background-image: url("../img/close-button.svg")
+	background-repeat: no-repeat
+	background-size: cover
+	text-align: center
+	width: 28px
+	height: 28px
+.large_header
+	position: relative
+	z-index: 3
+	margin-top: 220px
+	position: relative
+	+max-screen(485px)
+		margin-top: 100px
+	.number_with_dots
+		+max-screen(485px)
+			display: none
+	.large_header__decoration__number
+		color: #C0AF91
+		transform: rotate(90deg)
+		line-height: 22px
+		+max-screen(1153px)
+			margin-bottom: 60px
+		span
+			display: inline-block
+			font-size: em(52px) 
+			font-weight: 900 
+			+max-screen(910px)
+				font-size: em(43px)	
+		hr
+			display: inline-block
+			background-color: #C0AF91
+			border: 2px solid #C0AF91
+			width: 50px
+			position: relative
+			left: -10px
+			+max-screen(910px)
+				width: 40px
+	.large_header__decoration__dots
+		div
+			width: 9px
+			height: 9px
+			background-color: #303030
+			margin: 0 auto
+			margin-top: 30px
+			border-radius: 50%
+		div:nth-child(1)			
+			background-color: #BEA57C
+	.large_header__lear-more
+		h1
+			font-size: em(90px)
+			color: #BEA57C
+			font-weight: 900  
+			letter-spacing: 20px 
+			+max-screen(800px)
+				font-size: em(70px)
+				color: #BEA57C
+				font-weight: 900
+				letter-spacing: 20px
+			+max-screen(600px)
+				font-size: em(63px)
+				color: #BEA57C
+				font-weight: 900
+				letter-spacing: 20px
+			+max-screen(510px)
+				font-size: em(58px)			
+			+max-screen(411px)
+				font-size: em(45px) 
+			+max-screen(370px)
+				letter-spacing: 15px
+			+max-screen(355px)
+				font-size: em(37px) 
+				letter-spacing: 10px
+				overflow: hidden
+		+max-screen(485px)
+			width: 100%
+		button
+			padding: 15px 75px
+			text-transform: uppercase
+			color: #FFF
+			font-weight: 600
+			font-size: 14px
+			background-color: transparent
+			border: 2px solid #fff   
+			letter-spacing: 3px
+			margin-top: 61px
+			transition: .6s
+			margin-bottom: 50px
+			&:hover
+				color: #BEA57C
+				border-color: #BEA57C
+			+max-screen(1056px)
+				padding: 15px 65px
+				font-weight: 400
+				font-size: 13px
+				letter-spacing: 2px
+			+max-screen(957px)	
+				padding: 15px 55px
+				font-weight: 400
+				font-size: 12px
+				letter-spacing: 1.5px
+			+max-screen(839px)
+				padding: 15px 45px
+				font-weight: 400
+				font-size: 11px
+				letter-spacing: 1.5px		
+			+max-screen(742px)
+				padding: 15px 35px
+				font-weight: 400
+				font-size: 11px
+				letter-spacing: .5px	
+			+max-screen(646px)
+				padding: 15px 25px
+				font-weight: 400
+				font-size: 11px
+				letter-spacing: .5px	
+			+max-screen(411px)
+				padding: 10px 20px
+				font-size: 11px
+			+max-screen(411px)
+				padding: 7px 17px
+				font-size: 10px				
+		.scroll-guide
+			.icon-mouse::before
+				color: #fff
+				font-size: 30px
+				margin-top: 40px
+				margin-left: -5px
+			.scroll-guide_mouse
+				margin-bottom: 22px
+				margin-top: 66px
+			.scroll-guide_mouse_arrow
+				margin-top: 40px
+				margin-left: -6px
+			h2
+				text-align: left
+				margin-left: -16px
+				margin-top: 20px
+				color: #41413e
+	.furniture_text
+		h2
+			color: #2e281f
+			transform: rotate(90deg)
+			margin-top: 125px
+			font-size: 14px
+			letter-spacing: 2px 
+			min-width: 140px
+			+max-screen(1009px)
+				font-size: 14px
+				margin-top: 100px
+				min-width: 140px
+			+max-screen(719px)
+				display: none
+.share .icon-share
+	position: absolute
+	bottom: 22px
+	right: 22px
+	z-index: 3
+	color: #BEA57C
+	font-size: 30px
+.hamburger_menu
+	position: relative
+	z-index: 200	
+	color: #fff
+	position: fixed
+	top: 0
+	left: -41%
+	width: 41%
+	height: 100vh
+	text-align: center
+	background-color: #000
+	padding: 20px 0 
+	ul
+		li
+			margin-top: 30px
+			margin-bottom: 30px
+			transition: .5s
+			cursor: pointer
+			&:hover
+				color: #BEA57C
+body.active-body
+	transform: translateX(40%)
+	overflow: hidden
+.hamburger_menu.active_menu
+	left: -40%	
+body
+	overflow-x: hidden
+	transition: .6s
+	max-width: 100%
+.hamburger_menu
+	transition: .6s

@@ -1,0 +1,161 @@
+.clear
+	clear: both
+.main_header
+	padding-top: 30px
+	padding-bottom: 100px
+	position: relative
+	padding-bottom: 160px
+	+max-screen(485px)
+		padding-bottom: 70px
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 51%
+		height: 96%
+		background-image: url('../img/header_bg.png')
+		background-repeat: no-repeat
+		background-size: cover
+		z-index: 2 
+		+max-screen(760px)
+			width: 0%
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		width: 50%
+		height: 100%
+		background-image: url('../img/header_background.png')
+		background-repeat: no-repeat
+		background-size: cover 
+		z-index: 2
+		+max-screen(760px)
+			width: 100%
+	nav
+		line-height: 32px
+		font-size: em(13.5px)
+		color: #FFF
+		position: relative
+		z-index: 3
+		.nav__menu
+			text-align: left
+			.nav__menu__content
+				span
+					float: left
+					margin-right: 20px
+					font-size: 31px
+					color: #BEA57C
+					+max-screen(720px)
+						margin-right: 10px
+					+max-screen(417px)
+						width: 27px
+						margin-top: 2px	
+					+max-screen(380px)
+						width: 20px
+						margin-top: 5px
+					+max-screen(364px)
+						margin-top: 0
+				div
+					color: #fff
+					transition: .6s
+					cursor: pointer
+					&:hover
+						color: #BEA57C
+					+max-screen(640px)
+						display: none
+				+max-screen(720px)
+					font-size: 11.6px	
+				+max-screen(417px)
+					font-size: 10px
+				+max-screen(431px)
+					font-size: 8px
+		.nav__categories
+			ul
+				+max-screen(992px)
+					text-align: center
+				li
+					display: inline-block
+					margin-left: 12.4%
+					color: #FFF
+					cursor: pointer
+					float: left
+					+max-screen(1024px)
+						margin-left: 10%
+					+max-screen(719px)
+						margin-left: 8.3%
+						font-size: 11.5px
+					+max-screen(627px)
+						&:nth-child(4)
+							display: none
+					+max-screen(577px)
+						&:nth-child(3)
+							display: none
+						&:nth-child(2)
+							display: none
+						&85vh.nav__logo
+							margin: 0 auto
+					a
+						color: #FFF
+						text-decoration: none
+						transition: .6s
+						&:hover
+							color: #BEA57C
+					&.nav__logo
+						color: #FFF
+						font-size: em(32px)
+						letter-spacing: 5px
+						font-weight: 900  
+						cursor: pointer 
+						margin-left: 0
+						span
+							color: #BFA67D
+							text-decoration: line-through
+							b
+								color: #FFF
+						+max-screen(330px)
+							font-size: em(25px)
+		.nav__settings
+			text-align: right
+			ul
+				.nav__lang
+					float: right
+					margin-left: 49px
+					margin-right: 10px
+					cursor: pointer
+					&:hover
+						ol.menu__table
+							opacity: 1
+					span
+						color: #A9946E
+						font-size: 10px
+					+max-screen(900px)
+						margin-left: 19px
+						margin-right: 5px					
+					+max-screen(647px)
+						display: none
+				ol.menu__table
+					position: absolute
+					background-color: #000
+					text-align: center
+					margin-left: -30px
+					opacity: 0
+					transition: .5s
+					li
+						float: none
+						padding-left: 30px
+						padding-right: 30px
+						padding-top: 6px
+						padding-bottom: 6px
+						text-align: center
+						transition: .6s
+						cursor: pointer
+						&:hover
+							color: #BEA57C
+			.icon-info::before
+				float: right
+				font-size: 20px
+				margin-top: 5px
+				
+				

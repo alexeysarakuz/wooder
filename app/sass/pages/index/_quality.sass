@@ -1,0 +1,77 @@
+.quality-videos
+	margin-bottom: 100px
+	.container
+		overflow: hidden
+	.quality__title
+		text-align: center
+		.quality__h2
+			font-size: 48px
+			color: #000
+		hr
+			width: 45px
+			height: 2px
+			background-color: #C8A77B
+			border: 1px solid #C8A77B
+			margin-top: 30px
+			margin-bottom: 30px
+		h3
+			max-width: 540px
+			color: #636262
+			font-size: 15px
+			text-align: center
+			margin: 0 auto
+			line-height: 20px
+			padding-right: 20px
+			padding-left: 20px
+			+max-screen(350px)
+				padding-left: 10px
+				padding-right: 10px
+	.row
+		margin-top: 80px
+		.quality__item
+			margin-bottom: 80px
+			+max-screen(767px)
+				&:nth-child(3)
+					margin-left: 25%
+			+max-screen(575px)
+				&:nth-child(3)
+					margin-left: 0%				
+		h2
+			text-align: center
+			margin-top: 26px
+			font-weight: 900 
+			font-size: 16px
+		hr
+			width: 34px
+			border: 1px solid #C8A77B
+			background-color: #C8A77B
+			margin-top: 43px
+		.quality__image
+			background-repeat: no-repeat
+			background-position: center
+			width: 232px
+			margin: 0 auto
+			height: 232px
+			position: relative
+			background-size: cover
+			+max-screen(992px)
+				width: 170px
+				height: 170px
+			+max-screen(600px)
+				width: 210px
+				height: 210px
+			&::after
+				content: ''
+				position: absolute
+				top: -7%
+				left: -7%
+				width: 114%
+				height: 114%
+				border: 1px solid #E6E6E6
+				border-radius: 50%
+		.quality__image1
+			background-image: url('../img/first_video.png') 
+		.quality__image2
+			background-image: url('../img/second_video.png') 
+		.quality__image3
+			background-image: url('../img/third_video.png') 

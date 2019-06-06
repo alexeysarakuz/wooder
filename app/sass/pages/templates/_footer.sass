@@ -1,0 +1,66 @@
+footer
+	background-image: url("../img/footer.png")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	padding-top: 10px
+	padding-bottom: 10px
+	margin-top: 120px
+	line-height: 51px
+	.footer__copyright
+		color: #444444	
+	.footer__designed
+		color: #444444
+		a
+			color: #fff
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	.logo__footer
+		color: #FFF
+		font-size: em(31px)
+		letter-spacing: 5px
+		font-weight: 900  
+		cursor: pointer 
+		span
+			color: #BFA67D
+			text-decoration: line-through
+			b
+				color: #FFF
+		+max-screen(992px)
+			float: left
+			margin-left: 0
+			width: 30%
+			text-align: center
+		+max-screen(768px)
+			font-size: em(23px)
+		+max-screen(560px)
+			float: none
+			font-size: em(36px)
+			text-align: center
+			width: 100%
+			margin-top: 30px
+			margin-bottom: 30px
+	.footer__copyright
+		+max-screen(992px)
+			width: 30%
+			float: left
+			text-align: left
+			font-size: 13px
+		+max-screen(560px)
+			float: none
+			text-align: center
+			width: 100%
+			font-size: 18px
+	.footer__designed
+		font-size: 16px
+		+max-screen(992px)
+			float: right
+			font-size: 13px
+			width: 40%
+			text-align: right
+		+max-screen(560px)
+			float: none
+			text-align: center
+			font-size: 18px
+			width: 100%
